@@ -1,0 +1,403 @@
+<mxGraphModel dx="0" dy="0" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="none" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="node2" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ComplexTask&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- taskCollection: List&amp;lt;Task&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ searchTaskInOther(Task): boolean&lt;br/&gt;+ deleteTask(Task): void&lt;br/&gt;+ addTask(Task): void&lt;br/&gt;+ estimateDuration(): int&lt;br/&gt;+ getAllTasksOfATask(): List&amp;lt;Task&amp;gt;&lt;br/&gt;+ getTaskCollection(): List&amp;lt;Task&amp;gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-94" y="710" width="258" height="208" as="geometry" />
+    </mxCell>
+    <mxCell id="node4" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Controller&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- v: View&lt;br/&gt;- p: PossibleTasks&lt;br/&gt;- u: Utility&lt;br/&gt;- t: TaskManagement&lt;br/&gt;- s: DataStorage&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ viewLogic(): void&lt;br/&gt;+ listenLogic(): void&lt;br/&gt;+ modifyLogic(): void&lt;br/&gt;+ searchInTable(ComplexTask, Employee, DefaultTableModel): void&lt;br/&gt;+ backLogic(): void&lt;br/&gt;+ updateFilterTable(): void&lt;br/&gt;+ updateComputeTable(): void&lt;br/&gt;+ navigateLogic(): void&lt;br/&gt;+ updateTable(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="529" y="6406" width="452" height="376" as="geometry" />
+    </mxCell>
+    <mxCell id="node10" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DataStorage&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- t: TaskManagement&lt;br/&gt;- p: PossibleTasks&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getP(): PossibleTasks&lt;br/&gt;+ loadData(): void&lt;br/&gt;+ saveData(): void&lt;br/&gt;+ getT(): TaskManagement&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="654" y="3562" width="202" height="184" as="geometry" />
+    </mxCell>
+    <mxCell id="node3" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Employee&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- idEmployee: int&lt;br/&gt;- name: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ setIdEmployee(int): void&lt;br/&gt;+ toString(): String&lt;br/&gt;+ getName(): String&lt;br/&gt;+ hashCode(): int&lt;br/&gt;+ equals(Object): boolean&lt;br/&gt;+ getIdEmployee(): int&lt;br/&gt;+ setName(String): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="178" y="-14" width="195" height="256" as="geometry" />
+    </mxCell>
+    <mxCell id="node1" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Main&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ main(String[]): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="313" y="6883" width="165" height="68" as="geometry" />
+    </mxCell>
+    <mxCell id="node7" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PossibleTasks&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- unassignedTasks: List&amp;lt;Task&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ addTask(Task): void&lt;br/&gt;+ assignToComplexTask(int, int): void&lt;br/&gt;+ setUnassignedTasks(List&amp;lt;Task&amp;gt;): void&lt;br/&gt;+ getUnassignedTasks(): List&amp;lt;Task&amp;gt;&lt;br/&gt;+ verifyTaskIntegrity(Task): boolean&lt;br/&gt;+ getTask(int): Task&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="792" y="710" width="286" height="208" as="geometry" />
+    </mxCell>
+    <mxCell id="node0" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SimpleTask&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- endHour: int&lt;br/&gt;- startHour: int&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ setStartHour(int): void&lt;br/&gt;+ setEndHour(int): void&lt;br/&gt;+ getEndHour(): int&lt;br/&gt;+ getStartHour(): int&lt;br/&gt;+ estimateDuration(): int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-77" y="3550" width="184" height="208" as="geometry" />
+    </mxCell>
+    <mxCell id="node6" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Task&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- idTask: int&lt;br/&gt;- statusTask: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ setIdTask(int): void&lt;br/&gt;+ getStatusTask(): String&lt;br/&gt;+ setStatusTask(String): void&lt;br/&gt;+ getIdTask(): int&lt;br/&gt;+ estimateDuration(): int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="-72" y="10" width="214" height="208" as="geometry" />
+    </mxCell>
+    <mxCell id="node8" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TaskManagement&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- map: Map&amp;lt;Employee, List&amp;lt;Task&amp;gt;&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ calculateEmployeeWorkDuration(int): int&lt;br/&gt;+ assignTaskToEmployee(int, Task): void&lt;br/&gt;- findTask(List&amp;lt;Task&amp;gt;, int): Task?&lt;br/&gt;+ getMap(): Map&amp;lt;Employee, List&amp;lt;Task&amp;gt;&amp;gt;&lt;br/&gt;+ verifyTaskForEmploye(List&amp;lt;Task&amp;gt;, int): boolean&lt;br/&gt;+ modifyTaskStatus(int, int): void&lt;br/&gt;+ recursiveChangeStatus(ComplexTask, String): void&lt;br/&gt;+ getTasksForEmployee(int): List&amp;lt;Task&amp;gt;&lt;br/&gt;+ setMap(Map&amp;lt;Employee, List&amp;lt;Task&amp;gt;&amp;gt;): void&lt;br/&gt;+ getEmployees(): ArrayList&amp;lt;Employee&amp;gt;&lt;br/&gt;+ verifyEmployee(Employee): boolean&lt;br/&gt;+ addEmployee(Employee): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="1115" y="338" width="361" height="352" as="geometry" />
+    </mxCell>
+    <mxCell id="node5" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Utility&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- data: TaskManagement&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getData(): TaskManagement&lt;br/&gt;+ filterEmployees(): Map&amp;lt;String, Integer&amp;gt;&lt;br/&gt;+ compute(): Map&amp;lt;String, Map&amp;lt;String, Integer&amp;gt;&amp;gt;&lt;br/&gt;+ setData(TaskManagement): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="226" y="3574" width="339" height="160" as="geometry" />
+    </mxCell>
+    <mxCell id="node9" parent="1" vertex="1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;View&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- viewMainCardLayout: JPanel&lt;br/&gt;- complexMainStatusComboBox: JComboBox&amp;lt;String&amp;gt;&lt;br/&gt;- employeeIdLabel: JLabel&lt;br/&gt;- modifyTaskStatuscomboBox1: JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;- assignToComplexAddButton: JButton&lt;br/&gt;- utilityMainCardLayout: JPanel&lt;br/&gt;- viewButton: JButton&lt;br/&gt;- simpleOrComplexComboBox: JComboBox&amp;lt;String&amp;gt;&lt;br/&gt;- mployeeModifyLabel: JLabel&lt;br/&gt;- filterOrComputeCardLayout: JPanel&lt;br/&gt;- modifyMainCardLayout: JPanel&lt;br/&gt;- mainCardLayout: JPanel&lt;br/&gt;- computeButton: JButton&lt;br/&gt;- assignToEmployeeEmployeeComboBox: JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;- assignToComplexDestinationComboBox: JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;- modifyTaskStatusButton: JButton&lt;br/&gt;- simpleMainId: JLabel&lt;br/&gt;- startHour: JLabel&lt;br/&gt;- endHour: JLabel&lt;br/&gt;- assignToComplexDestinationLabel: JLabel&lt;br/&gt;- employeeAddButton: JButton&lt;br/&gt;- selectedTaskComboBox: JPanel&lt;br/&gt;- modifyCardLayout: JPanel&lt;br/&gt;- simpleMainStatuscomboBox: JComboBox&amp;lt;String&amp;gt;&lt;br/&gt;- assignToEmployeeTaskLabel: JLabel&lt;br/&gt;- filterTable: JTable&lt;br/&gt;- complexMain: JPanel&lt;br/&gt;- simpleMainTaskIdField: JTextField&lt;br/&gt;- assignToEmployeeAddButton: JButton&lt;br/&gt;- complexMainTaskIdField: JTextField&lt;br/&gt;- mainButtons: JPanel&lt;br/&gt;- employeeIdField: JTextField&lt;br/&gt;- header: JPanel&lt;br/&gt;- modifyTaskStatuscomboBox2: JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;- taskButton: JButton&lt;br/&gt;- assignToEmployeeButton: JButton&lt;br/&gt;- startHourField: JTextField&lt;br/&gt;- assignToEmployeeMain: JPanel&lt;br/&gt;- selectedTaskMain: JPanel&lt;br/&gt;- assignToComplexSourceLabel: JLabel&lt;br/&gt;- emptyModifyCardLayout: JPanel&lt;br/&gt;- mainPanel: JPanel&lt;br/&gt;- employeeButton: JButton&lt;br/&gt;- taskMain: JPanel&lt;br/&gt;- computemain: JPanel&lt;br/&gt;- assignToComplexTaskMain: JPanel&lt;br/&gt;- employeeNameField: JTextField&lt;br/&gt;- modifyTaskStatusMain: JPanel&lt;br/&gt;- computeTable: JTable&lt;br/&gt;- employeeNameLabel: JLabel&lt;br/&gt;- complexMainStatusComboBoxLabel: JLabel&lt;br/&gt;- modifyButton: JButton&lt;br/&gt;- assignToComplexSourceComboBox: JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;- utilityButton: JButton&lt;br/&gt;- taskModifyLabel: JLabel&lt;br/&gt;- complexMainTaskIdLabel: JLabel&lt;br/&gt;- assignToComplexMain: JPanel&lt;br/&gt;- taskManagerLabel: JLabel&lt;br/&gt;- emptyMainCardLayout: JPanel&lt;br/&gt;- assignToEmployeeEmployeeLabel: JLabel&lt;br/&gt;- assignToEmployeeTaskComboBox: JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;- filterButton: JButton&lt;br/&gt;- employeeMain: JPanel&lt;br/&gt;- complexMainAddButton: JButton&lt;br/&gt;- modifyButtons: JPanel&lt;br/&gt;- assignToComplexTaskButton: JButton&lt;br/&gt;- viewTable: JTable&lt;br/&gt;- simpleMainAddButton: JButton&lt;br/&gt;- endHourField: JTextField&lt;br/&gt;- filtermain: JPanel&lt;br/&gt;- simpleMain: JPanel&lt;br/&gt;- modifyTaskButton: JButton&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ setAssignToEmployeeButton(JButton): void&lt;br/&gt;+ getComplexMainAddButton(): JButton&lt;br/&gt;+ setUtilityButton(JButton): void&lt;br/&gt;+ setComputeButton(JButton): void&lt;br/&gt;+ setStartHourField(JTextField): void&lt;br/&gt;+ setEmptyModifyCardLayout(JPanel): void&lt;br/&gt;+ setComplexMainStatusComboBoxLabel(JLabel): void&lt;br/&gt;+ getAssignToEmployeeTaskComboBox(): JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;+ getComplexMain(): JPanel&lt;br/&gt;+ setEmployeeButton(JButton): void&lt;br/&gt;+ setModifyTaskStatuscomboBox2(JComboBox&amp;lt;Integer&amp;gt;): void&lt;br/&gt;+ setEndHour(JLabel): void&lt;br/&gt;+ getMainPanel(): JPanel&lt;br/&gt;+ setSimpleMain(JPanel): void&lt;br/&gt;+ getAssignToComplexSourceLabel(): JLabel&lt;br/&gt;+ getSimpleMainTaskIdField(): JTextField&lt;br/&gt;+ setModifyTaskStatusButton(JButton): void&lt;br/&gt;+ getAssignToComplexMain(): JPanel&lt;br/&gt;+ setTaskManagerLabel(JLabel): void&lt;br/&gt;+ setComplexMainStatusComboBox(JComboBox&amp;lt;String&amp;gt;): void&lt;br/&gt;+ getModifyTaskStatusButton(): JButton&lt;br/&gt;+ getTaskButton(): JButton&lt;br/&gt;+ getAssignToEmployeeEmployeeLabel(): JLabel&lt;br/&gt;+ getFilterOrComputeCardLayout(): JPanel&lt;br/&gt;+ getFiltermain(): JPanel&lt;br/&gt;+ setMainButtons(JPanel): void&lt;br/&gt;+ getMainCardLayout(): JPanel&lt;br/&gt;+ getTaskModifyLabel(): JLabel&lt;br/&gt;+ setEmployeeAddButton(JButton): void&lt;br/&gt;+ setAssignToComplexAddButton(JButton): void&lt;br/&gt;+ setTaskButton(JButton): void&lt;br/&gt;+ getUtilityButton(): JButton&lt;br/&gt;+ setMployeeModifyLabel(JLabel): void&lt;br/&gt;+ setAssignToComplexDestinationComboBox(JComboBox&amp;lt;Integer&amp;gt;): void&lt;br/&gt;+ setAssignToComplexTaskButton(JButton): void&lt;br/&gt;+ getAssignToEmployeeAddButton(): JButton&lt;br/&gt;+ getSimpleMainStatuscomboBox(): JComboBox&amp;lt;String&amp;gt;&lt;br/&gt;+ setComplexMainTaskIdField(JTextField): void&lt;br/&gt;+ setMainCardLayout(JPanel): void&lt;br/&gt;+ setModifyTaskButton(JButton): void&lt;br/&gt;+ showError(String, String): void&lt;br/&gt;+ getStartHourField(): JTextField&lt;br/&gt;+ setViewMainCardLayout(JPanel): void&lt;br/&gt;+ getEmptyMainCardLayout(): JPanel&lt;br/&gt;+ setAssignToEmployeeTaskLabel(JLabel): void&lt;br/&gt;+ getAssignToComplexAddButton(): JButton&lt;br/&gt;+ getEmployeeAddButton(): JButton&lt;br/&gt;+ getMployeeModifyLabel(): JLabel&lt;br/&gt;+ setModifyButtons(JPanel): void&lt;br/&gt;+ getEmployeeIdLabel(): JLabel&lt;br/&gt;+ getSimpleOrComplexComboBox(): JComboBox&amp;lt;String&amp;gt;&lt;br/&gt;+ setModifyTaskStatusMain(JPanel): void&lt;br/&gt;+ getUtilityMainCardLayout(): JPanel&lt;br/&gt;+ getModifyTaskButton(): JButton&lt;br/&gt;+ setModifyCardLayout(JPanel): void&lt;br/&gt;+ getEmployeeNameLabel(): JLabel&lt;br/&gt;+ setAssignToComplexDestinationLabel(JLabel): void&lt;br/&gt;+ setSelectedTaskComboBox(JPanel): void&lt;br/&gt;+ setFilterTable(JTable): void&lt;br/&gt;+ setAssignToEmployeeAddButton(JButton): void&lt;br/&gt;+ getEndHour(): JLabel&lt;br/&gt;+ getComputeTable(): JTable&lt;br/&gt;+ getModifyCardLayout(): JPanel&lt;br/&gt;+ setTaskModifyLabel(JLabel): void&lt;br/&gt;+ getAssignToEmployeeTaskLabel(): JLabel&lt;br/&gt;+ getComplexMainTaskIdLabel(): JLabel&lt;br/&gt;+ getAssignToComplexDestinationLabel(): JLabel&lt;br/&gt;+ getViewMainCardLayout(): JPanel&lt;br/&gt;+ setComplexMainTaskIdLabel(JLabel): void&lt;br/&gt;+ getComplexMainStatusComboBoxLabel(): JLabel&lt;br/&gt;+ changeCardLayout(JPanel, String): void&lt;br/&gt;+ getViewButton(): JButton&lt;br/&gt;+ setComplexMain(JPanel): void&lt;br/&gt;+ getSimpleMainAddButton(): JButton&lt;br/&gt;+ getSelectedTaskMain(): JPanel&lt;br/&gt;+ getModifyButtons(): JPanel&lt;br/&gt;+ setSimpleMainStatuscomboBox(JComboBox&amp;lt;String&amp;gt;): void&lt;br/&gt;+ getComplexMainStatusComboBox(): JComboBox&amp;lt;String&amp;gt;&lt;br/&gt;+ setUtilityMainCardLayout(JPanel): void&lt;br/&gt;+ getTaskMain(): JPanel&lt;br/&gt;+ getViewTable(): JTable&lt;br/&gt;+ setStartHour(JLabel): void&lt;br/&gt;+ setHeader(JPanel): void&lt;br/&gt;+ getEmployeeButton(): JButton&lt;br/&gt;+ setFiltermain(JPanel): void&lt;br/&gt;+ getModifyTaskStatuscomboBox1(): JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;+ setComplexMainAddButton(JButton): void&lt;br/&gt;+ getEndHourField(): JTextField&lt;br/&gt;+ setAssignToEmployeeMain(JPanel): void&lt;br/&gt;+ getComputemain(): JPanel&lt;br/&gt;+ setAssignToEmployeeTaskComboBox(JComboBox&amp;lt;Integer&amp;gt;): void&lt;br/&gt;+ getModifyTaskStatuscomboBox2(): JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;+ getEmployeeIdField(): JTextField&lt;br/&gt;+ getAssignToComplexTaskButton(): JButton&lt;br/&gt;+ setSelectedTaskMain(JPanel): void&lt;br/&gt;+ getMainButtons(): JPanel&lt;br/&gt;+ clearFields(JTextField): void&lt;br/&gt;+ getHeader(): JPanel&lt;br/&gt;+ setModifyButton(JButton): void&lt;br/&gt;+ getAssignToEmployeeMain(): JPanel&lt;br/&gt;+ getFilterTable(): JTable&lt;br/&gt;+ getModifyMainCardLayout(): JPanel&lt;br/&gt;+ setFilterOrComputeCardLayout(JPanel): void&lt;br/&gt;+ getEmptyModifyCardLayout(): JPanel&lt;br/&gt;+ setAssignToComplexMain(JPanel): void&lt;br/&gt;+ setModifyTaskStatuscomboBox1(JComboBox&amp;lt;Integer&amp;gt;): void&lt;br/&gt;+ setSimpleMainAddButton(JButton): void&lt;br/&gt;+ getModifyButton(): JButton&lt;br/&gt;+ setEndHourField(JTextField): void&lt;br/&gt;+ setUp(): void&lt;br/&gt;+ setTaskMain(JPanel): void&lt;br/&gt;+ getSimpleMainId(): JLabel&lt;br/&gt;+ getModifyTaskStatusMain(): JPanel&lt;br/&gt;+ setAssignToEmployeeEmployeeComboBox(JComboBox&amp;lt;Integer&amp;gt;): void&lt;br/&gt;+ getEmployeeNameField(): JTextField&lt;br/&gt;+ getSimpleMain(): JPanel&lt;br/&gt;+ getComputeButton(): JButton&lt;br/&gt;+ setAssignToComplexSourceLabel(JLabel): void&lt;br/&gt;+ getStartHour(): JLabel&lt;br/&gt;+ setAssignToEmployeeEmployeeLabel(JLabel): void&lt;br/&gt;+ setEmployeeNameField(JTextField): void&lt;br/&gt;+ setSimpleMainTaskIdField(JTextField): void&lt;br/&gt;+ setFilterButton(JButton): void&lt;br/&gt;+ setEmployeeIdField(JTextField): void&lt;br/&gt;+ setSimpleMainId(JLabel): void&lt;br/&gt;+ setViewButton(JButton): void&lt;br/&gt;+ getComplexMainTaskIdField(): JTextField&lt;br/&gt;+ setViewTable(JTable): void&lt;br/&gt;+ getAssignToComplexDestinationComboBox(): JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;+ getTaskManagerLabel(): JLabel&lt;br/&gt;+ setSimpleOrComplexComboBox(JComboBox&amp;lt;String&amp;gt;): void&lt;br/&gt;+ getAssignToComplexSourceComboBox(): JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;+ setMainPanel(JPanel): void&lt;br/&gt;+ getEmployeeMain(): JPanel&lt;br/&gt;+ setAssignToComplexSourceComboBox(JComboBox&amp;lt;Integer&amp;gt;): void&lt;br/&gt;+ getAssignToEmployeeEmployeeComboBox(): JComboBox&amp;lt;Integer&amp;gt;&lt;br/&gt;+ setComputemain(JPanel): void&lt;br/&gt;+ setEmptyMainCardLayout(JPanel): void&lt;br/&gt;+ getFilterButton(): JButton&lt;br/&gt;+ setModifyMainCardLayout(JPanel): void&lt;br/&gt;+ setComputeTable(JTable): void&lt;br/&gt;+ getAssignToEmployeeButton(): JButton&lt;br/&gt;+ setEmployeeNameLabel(JLabel): void&lt;br/&gt;+ setEmployeeMain(JPanel): void&lt;br/&gt;+ setEmployeeIdLabel(JLabel): void&lt;br/&gt;+ getSelectedTaskComboBox(): JPanel&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;">
+      <mxGeometry x="909" y="1018" width="493" height="5272" as="geometry" />
+    </mxCell>
+    <mxCell id="edge1" edge="1" value="" parent="1" source="node2" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.250;exitY=0.000;exitDx=0;exitDy=0;entryX=0.250;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="-29" y="674" />
+          <mxPoint x="-25" y="674" />
+          <mxPoint x="-25" y="254" />
+          <mxPoint x="-18" y="254" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="edge6" edge="1" value="" parent="1" source="node2" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.750;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="100" y="294" />
+          <mxPoint x="95" y="294" />
+          <mxPoint x="95" y="254" />
+          <mxPoint x="89" y="254" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label36" parent="edge6" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="89" y="685" as="geometry" />
+    </mxCell>
+    <mxCell id="label40" parent="edge6" vertex="1" connectable="0" value="*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="91" y="353" as="geometry" />
+    </mxCell>
+    <mxCell id="label41" parent="edge6" vertex="1" connectable="0" value="taskCollection" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="89" y="223" as="geometry" />
+    </mxCell>
+    <mxCell id="edge22" edge="1" value="" parent="1" source="node4" target="node2" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.250;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="642" y="6374" />
+          <mxPoint x="15" y="6374" />
+          <mxPoint x="15" y="3774" />
+          <mxPoint x="135" y="3774" />
+          <mxPoint x="135" y="3534" />
+          <mxPoint x="35" y="3534" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label134" parent="edge22" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="85" y="3524" as="geometry" />
+    </mxCell>
+    <mxCell id="edge11" edge="1" value="" parent="1" source="node4" target="node10" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="868" y="6374" />
+          <mxPoint x="875" y="6374" />
+          <mxPoint x="875" y="3534" />
+          <mxPoint x="755" y="3534" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label66" parent="edge11" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="864" y="5891" as="geometry" />
+    </mxCell>
+    <mxCell id="label70" parent="edge11" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="810" y="3514" as="geometry" />
+    </mxCell>
+    <mxCell id="label71" parent="edge11" vertex="1" connectable="0" value="s" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="850" y="3534" as="geometry" />
+    </mxCell>
+    <mxCell id="edge8" edge="1" value="" parent="1" source="node4" target="node3" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.250;exitY=0.000;exitDx=0;exitDy=0;entryX=0.250;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="642" y="6374" />
+          <mxPoint x="15" y="6374" />
+          <mxPoint x="15" y="3774" />
+          <mxPoint x="195" y="3774" />
+          <mxPoint x="195" y="794" />
+          <mxPoint x="226" y="794" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label50" parent="edge8" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="170" y="3754" as="geometry" />
+    </mxCell>
+    <mxCell id="edge3" edge="1" value="" parent="1" source="node4" target="node7" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="868" y="6374" />
+          <mxPoint x="875" y="6374" />
+          <mxPoint x="875" y="6314" />
+          <mxPoint x="1435" y="6314" />
+          <mxPoint x="1435" y="994" />
+          <mxPoint x="775" y="994" />
+          <mxPoint x="775" y="674" />
+          <mxPoint x="935" y="674" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label18" parent="edge3" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1150" y="6294" as="geometry" />
+    </mxCell>
+    <mxCell id="label22" parent="edge3" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="810" y="654" as="geometry" />
+    </mxCell>
+    <mxCell id="label23" parent="edge3" vertex="1" connectable="0" value="p" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="890" y="674" as="geometry" />
+    </mxCell>
+    <mxCell id="edge12" edge="1" value="" parent="1" source="node4" target="node0" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.250;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="642" y="6374" />
+          <mxPoint x="15" y="6374" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label74" parent="edge12" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="178" y="6354" as="geometry" />
+    </mxCell>
+    <mxCell id="edge13" edge="1" value="" parent="1" source="node4" target="node8" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="868" y="6374" />
+          <mxPoint x="875" y="6374" />
+          <mxPoint x="875" y="6314" />
+          <mxPoint x="635" y="6314" />
+          <mxPoint x="635" y="3534" />
+          <mxPoint x="395" y="3534" />
+          <mxPoint x="395" y="314" />
+          <mxPoint x="1295" y="314" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label78" parent="edge13" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="810" y="6294" as="geometry" />
+    </mxCell>
+    <mxCell id="label82" parent="edge13" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1065" y="294" as="geometry" />
+    </mxCell>
+    <mxCell id="label83" parent="edge13" vertex="1" connectable="0" value="t" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1067" y="314" as="geometry" />
+    </mxCell>
+    <mxCell id="edge5" edge="1" value="" parent="1" source="node4" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="868" y="6374" />
+          <mxPoint x="875" y="6374" />
+          <mxPoint x="875" y="6314" />
+          <mxPoint x="595" y="6314" />
+          <mxPoint x="595" y="3554" />
+          <mxPoint x="395" y="3554" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label30" parent="edge5" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="730" y="6294" as="geometry" />
+    </mxCell>
+    <mxCell id="label34" parent="edge5" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="540" y="3534" as="geometry" />
+    </mxCell>
+    <mxCell id="label35" parent="edge5" vertex="1" connectable="0" value="u" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="435" y="3554" as="geometry" />
+    </mxCell>
+    <mxCell id="edge18" edge="1" value="" parent="1" source="node4" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.250;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="642" y="6374" />
+          <mxPoint x="15" y="6374" />
+          <mxPoint x="15" y="6354" />
+          <mxPoint x="395" y="6354" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label110" parent="edge18" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="53" y="6334" as="geometry" />
+    </mxCell>
+    <mxCell id="edge10" edge="1" value="" parent="1" source="node4" target="node9" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.750;exitY=0.000;exitDx=0;exitDy=0;entryX=0.250;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="868" y="6374" />
+          <mxPoint x="875" y="6374" />
+          <mxPoint x="875" y="6314" />
+          <mxPoint x="1032" y="6314" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label60" parent="edge10" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="896" y="6294" as="geometry" />
+    </mxCell>
+    <mxCell id="label64" parent="edge10" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="974" y="6294" as="geometry" />
+    </mxCell>
+    <mxCell id="label65" parent="edge10" vertex="1" connectable="0" value="v" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="975" y="6314" as="geometry" />
+    </mxCell>
+    <mxCell id="edge20" edge="1" value="" parent="1" source="node10" target="node7" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="755" y="3514" />
+          <mxPoint x="775" y="3514" />
+          <mxPoint x="775" y="674" />
+          <mxPoint x="935" y="674" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label120" parent="edge20" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="760" y="3454" as="geometry" />
+    </mxCell>
+    <mxCell id="label124" parent="edge20" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="796" y="654" as="geometry" />
+    </mxCell>
+    <mxCell id="label125" parent="edge20" vertex="1" connectable="0" value="p" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="903" y="674" as="geometry" />
+    </mxCell>
+    <mxCell id="edge7" edge="1" value="" parent="1" source="node10" target="node8" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="755" y="3494" />
+          <mxPoint x="395" y="3494" />
+          <mxPoint x="395" y="314" />
+          <mxPoint x="1295" y="314" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label42" parent="edge7" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="630" y="3474" as="geometry" />
+    </mxCell>
+    <mxCell id="label46" parent="edge7" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1140" y="294" as="geometry" />
+    </mxCell>
+    <mxCell id="label47" parent="edge7" vertex="1" connectable="0" value="t" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1142" y="314" as="geometry" />
+    </mxCell>
+    <mxCell id="edge21" edge="1" value="" parent="1" source="node1" target="node4" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.250;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="395" y="6854" />
+          <mxPoint x="1015" y="6854" />
+          <mxPoint x="1015" y="6354" />
+          <mxPoint x="642" y="6354" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label128" parent="edge21" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="887" y="6834" as="geometry" />
+    </mxCell>
+    <mxCell id="edge4" edge="1" value="" parent="1" source="node1" target="node10" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="395" y="6854" />
+          <mxPoint x="495" y="6854" />
+          <mxPoint x="495" y="6334" />
+          <mxPoint x="755" y="6334" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label26" parent="edge4" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="445" y="6584" as="geometry" />
+    </mxCell>
+    <mxCell id="edge14" edge="1" value="" parent="1" source="node1" target="node7" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="395" y="6854" />
+          <mxPoint x="1475" y="6854" />
+          <mxPoint x="1475" y="974" />
+          <mxPoint x="935" y="974" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label86" parent="edge14" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1425" y="3904" as="geometry" />
+    </mxCell>
+    <mxCell id="edge2" edge="1" value="" parent="1" source="node1" target="node8" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="395" y="6854" />
+          <mxPoint x="1515" y="6854" />
+          <mxPoint x="1515" y="954" />
+          <mxPoint x="1295" y="954" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label14" parent="edge2" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1303" y="6834" as="geometry" />
+    </mxCell>
+    <mxCell id="edge19" edge="1" value="" parent="1" source="node1" target="node5" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.001;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label116" parent="edge19" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="345" y="5298" as="geometry" />
+    </mxCell>
+    <mxCell id="edge16" edge="1" value="" parent="1" source="node1" target="node9" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.750;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="395" y="6854" />
+          <mxPoint x="1275" y="6854" />
+          <mxPoint x="1275" y="6574" />
+          <mxPoint x="1278" y="6574" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label98" parent="edge16" vertex="1" connectable="0" value="«create»" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1225" y="6704" as="geometry" />
+    </mxCell>
+    <mxCell id="edge9" edge="1" value="" parent="1" source="node7" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.750;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="935" y="294" />
+          <mxPoint x="95" y="294" />
+          <mxPoint x="95" y="254" />
+          <mxPoint x="89" y="254" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label54" parent="edge9" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="924" y="631" as="geometry" />
+    </mxCell>
+    <mxCell id="label58" parent="edge9" vertex="1" connectable="0" value="*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="231" y="274" as="geometry" />
+    </mxCell>
+    <mxCell id="label59" parent="edge9" vertex="1" connectable="0" value="unassignedTasks" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="95" y="264" as="geometry" />
+    </mxCell>
+    <mxCell id="edge0" edge="1" value="" parent="1" source="node0" target="node6" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.250;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="15" y="3514" />
+          <mxPoint x="-125" y="3514" />
+          <mxPoint x="-125" y="674" />
+          <mxPoint x="-25" y="674" />
+          <mxPoint x="-25" y="254" />
+          <mxPoint x="-18" y="254" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="edge15" edge="1" value="" parent="1" source="node8" target="node3" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.750;entryY=1.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="1295" y="274" />
+          <mxPoint x="324" y="274" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label90" parent="edge15" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1192" y="254" as="geometry" />
+    </mxCell>
+    <mxCell id="label94" parent="edge15" vertex="1" connectable="0" value="*" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="416" y="254" as="geometry" />
+    </mxCell>
+    <mxCell id="label95" parent="edge15" vertex="1" connectable="0" value="map" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="324" y="248" as="geometry" />
+    </mxCell>
+    <mxCell id="edge17" edge="1" value="" parent="1" source="node5" target="node8" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=diamondThinstartSize=12;endArrow=openThin;endSize=12;strokeColor=#595959;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=0.000;entryDx=0;entryDy=0;">
+      <mxGeometry width="50" height="50" relative="1" as="geometry">
+        <Array as="points">
+          <mxPoint x="395" y="314" />
+          <mxPoint x="1295" y="314" />
+        </Array>
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="label102" parent="edge17" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="384" y="3549" as="geometry" />
+    </mxCell>
+    <mxCell id="label106" parent="edge17" vertex="1" connectable="0" value="1" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1110" y="294" as="geometry" />
+    </mxCell>
+    <mxCell id="label107" parent="edge17" vertex="1" connectable="0" value="data" style="edgeLabel;resizable=0;html=1;align=left;verticalAlign=top;strokeColor=default;">
+      <mxGeometry x="1101" y="314" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
